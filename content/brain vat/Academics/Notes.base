@@ -1,0 +1,7 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.inFolder("Academics/Sources/Notes")
+        - note["Has Notes"] == true
