@@ -1,0 +1,30 @@
+views:
+  - type: cards
+    name: Card View
+    filters:
+      and:
+        - file.inFolder("Academics/Sources/Books")
+    order:
+      - Title
+      - Author(s)
+      - Year
+      - Topic(s)
+      - URL
+    image: note.Image
+    imageAspectRatio: 1.1
+    cardSize: 240
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Academics/Sources/Books")
+    order:
+      - file.name
+      - Title
+      - Author(s)
+      - Year
+      - Topic(s)
+      - URL
+    sort:
+      - property: file.name
+        direction: DESC

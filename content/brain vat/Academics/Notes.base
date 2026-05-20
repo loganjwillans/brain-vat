@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.inFolder("Academics/Sources/Notes")
+        - note["Has Notes"] == true
+    order:
+      - file.name
+      - Topic(s)
+    sort:
+      - property: formula.Untitled
+        direction: ASC
+      - property: file.mtime
+        direction: DESC
+    columnSize:
+      file.name: 371
