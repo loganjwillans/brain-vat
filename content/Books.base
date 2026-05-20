@@ -34,7 +34,7 @@ views:
         direction: ASC
     columnSize:
       file.name: 166
-      note.Author(s): 183
+      note.Author(s): 1124
       note.Topic(s): 159
       note.Year: 167
       note.URL: 215
