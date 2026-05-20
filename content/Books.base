@@ -36,3 +36,4 @@ views:
       note.Topic(s): 200
       note.Year: 200
       note.URL: 200
+    rowHeight: medium
