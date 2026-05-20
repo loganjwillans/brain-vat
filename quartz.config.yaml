@@ -235,7 +235,7 @@ plugins:
       language: yaml
     order: 5
     layout:
-      position: beforeBody
+      position: right
       priority: 15
       display: all
   - source: github:quartz-community/unlisted-pages
