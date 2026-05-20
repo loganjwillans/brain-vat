@@ -22,7 +22,6 @@ views:
     filters:
       and:
         - file.inFolder("Academics/Sources/Books")
-        - file.name != "index"
     order:
       - file.name
       - Author(s)
