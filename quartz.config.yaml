@@ -127,6 +127,7 @@ plugins:
       folderClickBehavior: collapse # "link" to navigate or "collapse" to toggle
       folderDefaultState: collapsed # "collapsed" or "open"
       useSavedState: true
+      sortFn: "(a, b) => {return a.displayName.localeCompare(b.displayName)}"
     layout:
       position: left
       priority: 50
