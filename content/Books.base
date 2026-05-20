@@ -24,12 +24,12 @@ views:
     order:
       - file.name
       - Author(s)
-      - Topic(s)
+      - tags
     sort:
+      - property: tags
+        direction: DESC
       - property: URL
         direction: DESC
-      - property: Topic(s)
-        direction: ASC
     columnSize:
       file.name: 200
       note.Author(s): 200
