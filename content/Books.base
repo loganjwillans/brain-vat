@@ -2,25 +2,12 @@ filters:
   and:
     - file.inFolder("Academics/Sources/Books")
 views:
-  - type: cards
-    name: Card View
-    filters:
-      and:
-        - file.inFolder("Academics/Sources/Books")
-    order:
-      - Title
-      - Author(s)
-      - Year
-      - Topic(s)
-      - Image
-    image: note.Image
-    imageAspectRatio: 1
-    cardSize: 200
   - type: table
     name: Table
     filters:
       and:
         - file.inFolder("Academics/Sources/Books")
+        - file.name != "index"
     order:
       - file.name
       - Author(s)
@@ -37,3 +24,22 @@ views:
       note.Year: 200
       note.URL: 200
     rowHeight: medium
+  - type: table
+    name: Author
+    filters:
+      and:
+        - file.hasLink("Academics/Sources/Authors/David Bawden")
+  - type: cards
+    name: Card View
+    filters:
+      and:
+        - file.inFolder("Academics/Sources/Books")
+    order:
+      - Title
+      - Author(s)
+      - Year
+      - Topic(s)
+      - Image
+    image: note.Image
+    imageAspectRatio: 1
+    cardSize: 200

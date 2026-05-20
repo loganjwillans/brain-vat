@@ -1,7 +1,6 @@
 ---
 Title: Introduction to Information Science 2
 Author(s):
-  - David Bawden
 tags:
   - InformationScience
   - CognitiveScience
