@@ -1,3 +1,6 @@
+filters:
+  and:
+    - file.inFolder("Academics/Sources/Books")
 views:
   - type: cards
     name: Card View
