@@ -23,10 +23,9 @@ views:
         - file.inFolder("Academics/Sources/Books")
     order:
       - file.name
-      - Title
       - Author(s)
       - Topic(s)
       - Year
       - URL
     columnSize:
-      file.name: 304
+      file.name: 478
