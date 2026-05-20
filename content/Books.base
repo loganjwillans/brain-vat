@@ -27,5 +27,14 @@ views:
       - Topic(s)
       - Year
       - URL
+    sort:
+      - property: URL
+        direction: DESC
+      - property: Topic(s)
+        direction: ASC
     columnSize:
-      file.name: 478
+      file.name: 166
+      note.Author(s): 183
+      note.Topic(s): 159
+      note.Year: 167
+      note.URL: 215
