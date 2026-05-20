@@ -204,7 +204,7 @@ plugins:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
-    enabled: true
+    enabled: false
     options:
       limit: 3
     layout:
@@ -259,6 +259,10 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source: github:quartz-community/tui
+    enabled: true
+    options: {}
+    order: 50
 layout:
   groups:
     toolbar:

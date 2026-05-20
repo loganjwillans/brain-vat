@@ -264,6 +264,12 @@
       "commit": "1d85ea8c3d336b94de3eb1fe44eb0a888db1b784",
       "installedAt": "2026-05-20T00:48:19.480Z"
     },
+    "tui": {
+      "source": "github:quartz-community/tui",
+      "resolved": "https://github.com/quartz-community/tui.git",
+      "commit": "d1d51a626ef84a6f4d0933cce2b834a9db92282b",
+      "installedAt": "2026-05-20T15:46:35.247Z"
+    },
     "unlisted-pages": {
       "source": "github:quartz-community/unlisted-pages",
       "resolved": "https://github.com/quartz-community/unlisted-pages.git",
