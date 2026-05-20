@@ -2,11 +2,18 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import * as ExternalPlugin from "./.quartz/plugins"
 
 ExternalPlugin.Explorer({
-  mapFn: (node) => {
-    if (node.isFolder) {
-      node.displayName = "📁 " + node.displayName
+  sortFn: (a, b) => {
+    if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+      return (a.displayName ?? "").localeCompare(b.displayName ?? "", undefined, {
+        numeric: true,
+        sensitivity: "base",
+      })
+    }
+ 
+    if (!a.isFolder && b.isFolder) {
+      return 1
     } else {
-      node.displayName = "📄 " + node.displayName
+      return -1
     }
   },
 })
