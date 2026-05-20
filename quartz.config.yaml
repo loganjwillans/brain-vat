@@ -16,9 +16,9 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Averia Libre
+      body: Averia Libre
+      code: Courier Prime
     colors:
       lightMode:
         light: "#faf8f8"
