@@ -1,4 +1,18 @@
 views:
+  - type: cards
+    name: Card View
+    filters:
+      and:
+        - file.inFolder("Academics/Sources/Books")
+    order:
+      - Title
+      - Author(s)
+      - Year
+      - Topic(s)
+      - Image
+    image: note.Image
+    imageAspectRatio: 1
+    cardSize: 200
   - type: table
     name: Table
     filters:
@@ -13,16 +27,3 @@ views:
       - URL
     columnSize:
       file.name: 304
-  - type: cards
-    name: Card View
-    filters:
-      and:
-        - file.inFolder("Academics/Sources/Books")
-    order:
-      - Title
-      - Author(s)
-      - Year
-      - Topic(s)
-      - Image
-    image: note.Image
-    imageAspectRatio: 1
