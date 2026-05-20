@@ -1,6 +1,0 @@
-filters:
-  and:
-    - file.inFolder("Academics/Sources/Papers")
-views:
-  - type: table
-    name: Table

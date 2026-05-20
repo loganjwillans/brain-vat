@@ -1,9 +1,13 @@
-filters:
-  and:
-    - file.inFolder("Academics/Sources/Books")
 views:
   - type: table
-    name: Table
+    name: All
+    filters:
+      or:
+        - file.inFolder("Academics/Sources/Books")
+        - file.inFolder("Academics/Sources/Papers")
+    rowHeight: medium
+  - type: table
+    name: Books
     filters:
       and:
         - file.inFolder("Academics/Sources/Books")
@@ -25,21 +29,13 @@ views:
       note.URL: 200
     rowHeight: medium
   - type: table
-    name: Author
+    name: Authors
     filters:
       and:
-        - file.hasLink("Academics/Sources/Authors/David Bawden")
-  - type: cards
-    name: Card View
+        - file.inFolder("Academics/Sources/Authors")
+  - type: table
+    name: Papers
     filters:
       and:
-        - file.inFolder("Academics/Sources/Books")
-    order:
-      - Title
-      - Author(s)
-      - Year
-      - Topic(s)
-      - Image
-    image: note.Image
-    imageAspectRatio: 1
-    cardSize: 200
+        - file.inFolder("Academics/Sources/Papers")
+    rowHeight: medium
