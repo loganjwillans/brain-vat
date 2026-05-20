@@ -4,7 +4,9 @@ import * as ExternalPlugin from "./.quartz/plugins"
 ExternalPlugin.Explorer({
   sortFn: (a, b) => {
     if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
-      return a.displayName.localeCompare(b.displayName, undefined, {
+      const aName = a.displayName ?? ""
+      const bName = b.displayName ?? ""
+      return aName.localeCompare(bName, undefined, {
         numeric: true,
         sensitivity: "base",
       })
