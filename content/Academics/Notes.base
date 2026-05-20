@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: All
+    filters:
+      and:
+        - note["Has Notes"] == true
