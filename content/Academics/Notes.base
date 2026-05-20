@@ -1,6 +1,7 @@
+filters:
+  and:
+    - file.inFolder("Academics/Sources/Atomic")
+    - note["Has Notes"] == true
 views:
   - type: table
     name: All
-    filters:
-      or:
-        - note["Has Notes"] == true
