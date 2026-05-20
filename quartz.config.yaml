@@ -124,7 +124,7 @@ plugins:
     enabled: true
     options:
       title: Brain Vat
-      folderClickBehavior: link
+      folderClickBehavior: collapse
       folderDefaultState: collapsed
       useSavedState: false
       sortFn: "(a,b) => { if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) { return
