@@ -1,6 +1,7 @@
 filters:
   and:
     - file.name != "index"
+    - file.inFolder("Academics")
 properties:
   note.Author(s):
     displayName: author(s)
