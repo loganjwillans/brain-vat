@@ -142,8 +142,8 @@
     "graph": {
       "source": "github:quartz-community/graph",
       "resolved": "https://github.com/quartz-community/graph.git",
-      "commit": "57078cd5cec5b8f3de4ecab8233f827e3c9eeab1",
-      "installedAt": "2026-05-20T00:48:19.625Z"
+      "commit": "7239b083aece21880d1f057ce08ec96c03f39763",
+      "installedAt": "2026-05-21T15:22:50.796Z"
     },
     "hard-line-breaks": {
       "source": "github:quartz-community/hard-line-breaks",
@@ -194,9 +194,9 @@
         "subdir": "plugin"
       },
       "resolved": "https://github.com/saberzero1/quartz-themes.git",
-      "commit": "c03727c80244c0cc88a0047821384c63f35f69cd",
+      "commit": "68c3bf8877d81c38bd8c58473de2de1075b9470c",
       "subdir": "plugin",
-      "installedAt": "2026-05-20T00:48:51.277Z"
+      "installedAt": "2026-05-21T15:23:43.228Z"
     },
     "reader-mode": {
       "source": "github:quartz-community/reader-mode",
