@@ -70,6 +70,9 @@ plugins:
   - source: github:quartz-community/table-of-contents
     enabled: true
     order: 50
+    layout:
+      position: right
+      priority: 20
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -124,7 +127,7 @@ plugins:
     enabled: true
     options:
       title: Brain Vat
-      folderClickBehavior: link
+      folderClickBehavior: collapse
       folderDefaultState: collapsed
       useSavedState: false
       sortFn: "(a,b) => { if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) { return
@@ -225,17 +228,18 @@ plugins:
     options:
       includeAll: false
       includedProperties:
-        - description
+        - created
+        - modified
         - tags
-        - aliases
+        - permalink
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
       language: yaml
     order: 5
     layout:
-      position: beforeBody
-      priority: 15
+      position: right
+      priority: 25
       display: all
   - source: github:quartz-community/unlisted-pages
     enabled: true
