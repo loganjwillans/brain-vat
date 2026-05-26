@@ -1,13 +1,15 @@
 ---
-Title: Introduction to Information Science
-Author(s):
-  - "[[David Bawden]]"
-  - "[[Lyn Robinson]]"
-  - "[[Luciano Floridi]]"
+author(s):
+  - David Bowden
+Year: 2022
 tags:
   - InformationScience
-Year: 2022
-URL: https://www.cambridge.org/core/books/introduction-to-information-science/778A06FA1B748D1810F0981F54E51683
-Image: https://static.cambridge.org/content/id/urn:cambridge.org:id:book:9781783304967/resource/name/9781783304967i.jpg
+permalink: https://doi.org/10.29085/9781783304967
+Type: Book
+Has Notes:
+modified: 2026-05-20T12:58:18-04:00
+created: 2026-05-20T12:50:45-04:00
 ---
-Test test
+![250](https://static.cambridge.org/content/id/urn:cambridge.org:id:book:9781783304967/resource/name/9781783304967i.jpg)
+
+# Notes

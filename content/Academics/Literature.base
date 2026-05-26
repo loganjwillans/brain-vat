@@ -1,3 +1,10 @@
+filters:
+  and:
+    - file.name != "index"
+    - file.inFolder("Academics")
+properties:
+  note.Author(s):
+    displayName: author(s)
 views:
   - type: table
     name: All
@@ -5,13 +12,17 @@ views:
       or:
         - file.inFolder("Academics/Sources/Books")
         - file.inFolder("Academics/Sources/Papers")
+    order:
+      - file.name
+      - Author(s)
+      - Type
+      - tags
     rowHeight: medium
   - type: table
     name: Books
     filters:
       and:
         - file.inFolder("Academics/Sources/Books")
-        - file.name != "index"
     order:
       - file.name
       - Author(s)
